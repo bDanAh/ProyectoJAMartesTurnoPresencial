@@ -1,0 +1,30 @@
+package Test;
+
+import DaoImp.UsuarioImp;
+import model.TblUsuariot1;;
+
+public class TestUsuario {
+	public static void main(String[] args) {
+		// Realizamos la respectiva instancia
+		TblUsuariot1 tblusu=new TblUsuariot1();
+		UsuarioImp usuimp=new UsuarioImp();
+		
+		//asignamos valores
+		tblusu.setUsuariot1("julia ana");
+		tblusu.setPasswordt1("julian321");
+		//invocamos el metodo para registrar
+		usuimp.RegistrarUsuario(tblusu);
+			System.out.println("Datos Registrados");
+		
+		/*//TESTEAMOS EL MTODO ACTUALIZAR
+		tblusu.setIdusuariot1(2);
+		tblusu.setUsuariot1("jose carlos");
+		tblusu.setPasswordt1("josecarlo987");
+
+		//Invoco el método Actualizar
+		usuimp.ActualizarUsuario(tblusu);
+		//emitims un mensaje por consola
+		System.out.println("Datos Actualizados");*/
+	}
+
+}

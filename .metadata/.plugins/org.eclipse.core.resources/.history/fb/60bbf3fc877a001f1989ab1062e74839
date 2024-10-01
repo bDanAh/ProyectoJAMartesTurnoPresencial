@@ -1,0 +1,40 @@
+package DaoImp;
+
+import java.util.List;
+
+import Interfaces.Iusuario;
+import model.TblUsuariot1;
+
+public class UsuarioImp implements Iusuario{
+
+	@Override
+	public void RegistrarUsuario(TblUsuariot1 usuario) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void ActualizarUsuario(TblUsuariot1 usuario) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void EliminarUsuario(TblUsuariot1 usuario) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<TblUsuariot1> Listado() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public TblUsuariot1 BuscarUsuario(TblUsuariot1 usuario) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

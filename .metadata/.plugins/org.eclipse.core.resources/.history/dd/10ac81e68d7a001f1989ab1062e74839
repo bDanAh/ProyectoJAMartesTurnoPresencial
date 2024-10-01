@@ -1,0 +1,28 @@
+package Test;
+
+import DaoImp.ProductoImp;
+import model.TblProducto;
+
+public class TestProducto {
+	//2024-09-24
+	
+	public static void main(String[] args) {
+	// Realizamos la respectiva instancia
+			TblProducto tblprod=new TblProducto();
+			ProductoImp prodimp=new ProductoImp();
+			
+			//asignamos valores
+			tblprod.setNombret1("Papitas Lays");
+			tblprod.setPreciot1(1.5);
+			tblprod.setDescripciont1("Fresco");
+			tblprod.setEstadot1("Buen estado");
+			tblprod.setFechavencimt1(null);
+			tblprod.setFechavencimt1(null);
+
+			//invocamos el metodo para registrar
+			prodimp.RegistrarProducto(tblprod);
+			System.out.println("Datos Registrados");
+	
+				
+	}
+}

@@ -1,0 +1,13 @@
+package Test;
+
+import DaoImp.UsuarioImp;
+import model.TblUsuariot1;;
+
+public class TestUsuario {
+	public static void main(String[] args) {
+		// Realizamos la respectiva instancia
+		TblUsuariot1 tblusu=new TblUsuariot1();
+		UsuarioImp climp=new UsuarioImp();
+	}
+
+}

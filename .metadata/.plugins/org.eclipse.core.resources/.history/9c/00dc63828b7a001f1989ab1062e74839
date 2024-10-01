@@ -1,0 +1,71 @@
+package DaoImp;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import Interfaces.Iproducto;
+import model.TblProducto;
+
+public class ProductoImp implements Iproducto{
+
+	@Override
+	public void RegistrarProducto(TblProducto producto) {
+		// Nos conectamos con la nidad de persistecia
+		EntityManagerFactory emf=Persistence.createEntityManagerFactory("ProyJPA_LPII_T1_CABRERA_SANCHEZ_ANTHONY");
+		EntityManager em=emf.createEntityManager();
+		//Iniciamos las transacciones
+		em.getTransaction().begin();
+		//invocamos al metodo persi.. que nos permite insertar datos a la BD
+		em.persist(producto);
+		//Confrmamos la transaccion
+		em.getTransaction().commit();
+		//cerramos la transaccion
+		em.close();
+	}
+
+	@Override
+	public void ActualizarProducto(TblProducto producto) {
+		//Nos conectamos con la unidad de persistencia para
+		//regstrar los datos
+			EntityManagerFactory emf=Persistence.createEntityManagerFactory("ProyJPA_LPII_T1_CABRERA_SANCHEZ_ANTHONY");
+			//Para administrar as transacciones
+			EntityManager em=emf.createEntityManager();
+			try{
+			//Inicimos la transaccion
+			em.getTransaction().begin();
+			//invocamos el m{etodo actualizar
+			em.merge(producto);
+			//confirmamos
+			em.getTransaction().commit();
+			
+			}catch(RuntimeException ex){
+				ex.getMessage();
+			}finally{
+			//cerramos
+			em.close();
+			}
+			//fin del metodo actualizar
+	}
+
+	@Override
+	public void EliminarProducto(TblProducto producto) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public List<TblProducto> Listado() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public TblProducto BuscarProducto(TblProducto producto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

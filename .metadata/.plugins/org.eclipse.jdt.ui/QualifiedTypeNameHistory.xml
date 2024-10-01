@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="interfaces.Icliente"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="DaoImp.ClienteImp"/>
+<fullyQualifiedTypeName name="model.TblUsuario"/>
+<fullyQualifiedTypeName name="DaoImp.UsuarioImp"/>
+<fullyQualifiedTypeName name="javax.persistence.Persistence"/>
+<fullyQualifiedTypeName name="java.lang.ReflectiveOperationException"/>
+<fullyQualifiedTypeName name="com.mysql.cj.protocol.TlsAsynchronousSocketChannel"/>
+<fullyQualifiedTypeName name="model.TblCliente"/>
+<fullyQualifiedTypeName name="javax.persistence.RollbackException"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+<fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="Interfaces.Iusuario"/>
+<fullyQualifiedTypeName name="Interfaces.Iproducto"/>
+<fullyQualifiedTypeName name="model.TblProducto"/>
+<fullyQualifiedTypeName name="DaoImp.ProductoImp"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="model.TblUsuariot1"/>
+</qualifiedTypeNameHistroy>
